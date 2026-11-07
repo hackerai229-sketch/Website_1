@@ -1,0 +1,16 @@
+<html>
+<head><title>Meri API Website</title></head>
+<body style="text-align:center; font-family:Arial; background:black; color:white;">
+<h1>🔥 Boss Ki API Website 🔥</h1>
+<p>Button Dabao, API Key Banao</p>
+<button onclick="banao()" style="padding:15px; font-size:20px;">API Key Banao</button>
+<h2 id="key"></h2>
+
+<script>
+function banao(){
+  let key = "BOSS-" + Math.random().toString(36).slice(2,10).toUpperCase() + "-" + Date.now();
+  document.getElementById("key").innerText = key;
+}
+</script>
+</body>
+</html>
